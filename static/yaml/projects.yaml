@@ -18,9 +18,9 @@
   title: "Computer Vision Drone"
   link: "https://github.com/nspeer12/tello"
   featured: False
-  img: "static/assets/img/demo-image-02.jpg"
+  img: "static/assets/img/cv.png"
 -
   title: "Computer Vision Algorithms"
   link: "https://github.com/nspeer12/ObjectDetection"
   featured: False
-  img: "static/assets/img/demo-image-02.jpg"
+  img: "static/assets/img/cv.png"

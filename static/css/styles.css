@@ -3980,6 +3980,7 @@ input[type=button].btn-block {
   list-style: none;
 }
 
+
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
@@ -10200,15 +10201,15 @@ body {
     border-bottom: 0.25rem solid transparent;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #FFFFFF;
+    color: #000000;
   }
   #mainNav.navbar-shrink .nav-link:active {
     color: rgba(255, 255, 255, 1);
   }
   #mainNav.navbar-shrink .nav-link.active {
-    color: #FFFFFF;
+    color: #000000;
     outline: none;
-    border-bottom: 0.25rem solid #FFFFFF;
+    border-bottom: 0.25rem solid #000000;
   }
 }
 
