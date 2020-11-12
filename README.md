@@ -1,1 +1,1 @@
-# Ntelligent.ai
+# speer.ai
