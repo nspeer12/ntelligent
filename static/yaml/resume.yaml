@@ -1,0 +1,29 @@
+-
+  title: "Lead Software Engineer"
+  company: "eCommerceLending.com"
+  link: "https://www.ecommercelending.com"
+  start: "December 2018"
+  end: "Present"
+  items: ["Developed loan risk analysis tool to screen potential clients by applying k-nearest-neighbors algorithm on financial information against a large loan data set.",
+           "Designed front end website using Bootstrap and dynamic content generation.",
+           "Developed website backend using Python Flask web server.",
+           "Designed website for mobile responsiveness and clean user experience."]
+-
+  title: "Software Engineer Intern"
+  company: "Contractor at Lockheed Martin"
+  link: None
+  start: "February 2020"
+  end: "May 2020"
+  items: ["Worked on JAGM missile program at Lockheed Martin’s MFC division.",
+          "Worked on software tools that interface with telemetry and hardware controller programs to simulate launches and perform tests on hardware.",
+          "Visualized telemetry data using Matplotlib"]
+-
+  title: "Project Teams Director"
+  company: "AI@UCF"
+  link: None
+  start: "November 2019"
+  end: "Present"
+  items: ["Facilitates several AI related student projects and cultivates an AI engineering community.",
+          "Presented workshop on time series data analysis and LSTM models.",
+          "Delivered workshop on utilizing data science to search for Exoplanets using a NASA dataset.",
+          "Forecasted Coronavirus data using regression models in live coding demo."]

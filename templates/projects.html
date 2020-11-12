@@ -1,0 +1,41 @@
+<section class="projects-section bg-light" id="projects">
+    <div class="container">
+
+      {% if featured_project != None %}
+        <!-- Featured Project Row-->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+            <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src={{ featured_img }} alt="" /></div>
+            <div class="col-xl-4 col-lg-5">
+                <div class="featured-text text-center text-lg-left">
+                    <a href="{{ featured_project.link }}">
+                      <h4>{{ featured_project.title }}</h4>
+                      <p class="text-black-50 mb-0">{{ featured_project.description }}</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+      {% endif %}
+
+      {% for project in projects %}
+          <!-- Project One Row-->
+          <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+              <div class="col-lg-6"><img class="img-fluid" src={{ project.img }} alt="" /></div>
+              <div class="{{ project.col_classes }}">
+                  <div class="bg-black text-center h-100 project">
+                      <div class="d-flex h-100">
+                          <div class={{ project.classes }}>
+                              <a href="{{ project.link }}" target="_blank">
+                                <h4 class="text-white">{{ project.title }}</h4>
+                                <p class="mb-0 text-white-50">{{ project.description }}</p>
+                                <hr class="d-none d-lg-block mb-0 ml-0" />
+                              </a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      {% endfor %}
+
+
+    </div>
+</section>

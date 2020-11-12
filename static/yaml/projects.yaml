@@ -1,0 +1,26 @@
+-
+  title: "Stock Tweets Sentiment Analysis"
+  link: "https://github.com/nspeer12/stock-sentiment-analysis"
+  featured: True
+  description: "Scraped millions of tweets. created a Classifier using BERT"
+  img: "static/assets/img/background.jpg"
+-
+  title: "Quickscope Bot for Call of Duty: Modern Warfare"
+  link: null
+  featured: False
+  img: "static/assets/img/demo-image-01.jpg"
+-
+  title: "Particle Simulator"
+  link: "https://github.com/nspeer12/simulator"
+  featured: False
+  img: "static/assets/img/demo-image-02.jpg"
+-
+  title: "Computer Vision Drone"
+  link: "https://github.com/nspeer12/tello"
+  featured: False
+  img: "static/assets/img/demo-image-02.jpg"
+-
+  title: "Computer Vision Algorithms"
+  link: "https://github.com/nspeer12/ObjectDetection"
+  featured: False
+  img: "static/assets/img/demo-image-02.jpg"

@@ -1,0 +1,20 @@
+<section id="resume">
+  <h1 class="text-center mt-5">EXPERIENCE</h1>
+  <div class=container text-center">
+  {% if resume != None %}
+    {% for job in resume %}
+      <div class="col-md-10 m-5 mb-10" >
+        <h2 href="{{ job.link }}">{{ job.title }}</h2>
+        <h4>{{ job.company }}</h4>
+        <a>{{ job.start }} to {{ job.end }}</a>
+
+        <ul>
+          {% for item in job["items"] %}
+            <li> {{ item }} </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  {% endif %}
+  </div>
+</section>

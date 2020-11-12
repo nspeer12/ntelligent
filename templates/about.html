@@ -1,0 +1,13 @@
+<section id="about">
+  <h1>ABOUT</h1>
+  <div class="container">
+    <div class="row">
+      {% for img in me_imgs %}
+        <div class="col-sm-3">
+          <img class="img-fluid rounded" src="{{ img.path }}" style="width: auto; height=1000px;"></img>
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+</section>
