@@ -3,8 +3,10 @@
 {% block head %}
   <script type="text/javascript">
     var i = 0;
-    var txt = "Hi, I'm Nick"; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    var txt = "whoami";
+    var name = "Hi, I'm Nick Speer";
+    var speed = 150;
+    var j = 0
 
     window.onload = function() {
       typeWriter();
@@ -12,10 +14,27 @@
 
     function typeWriter() {
       if (i < txt.length) {
-        document.getElementById("name").innerHTML += txt.charAt(i);
+        document.getElementById("whoami").innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(typeWriter, Math.random() * 200 + 50);
       }
+      else {
+        if (j > 4 && j < name.length+5) {
+          document.getElementById("me").innerHTML += name.charAt(j-5);
+          j++;
+          setTimeout(typeWriter, Math.random() * 200);
+        }
+        else {
+          // wait a bit
+          setTimeout(typeWriter, 200);
+          j++;
+        }
+      }
+
+
+
+
+
     };
 
   </script>
@@ -41,17 +60,17 @@
             </div>
         </nav>
 
-
         <!-- Masthead-->
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h2 class="text-white mt-2 mb-5" id="name"></h2>
+                    <h2 class="text-white mt-2 mb-5" id="whoami"> </h2>
+                    <h2 class="text-white mt-2 mb-5" id="me"></h2>
                 </div>
             </div>
-
         </header>
 
+        {% include "about.html" %}
         {% include "projects.html" %}
         {% include "resume.html" %}
 
