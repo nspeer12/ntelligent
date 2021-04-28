@@ -32,5 +32,10 @@ def index():
     return render_template("index.html", **locals())
 
 
+@app.route("/cyber.html")
+def cyber():
+    return render_template("cyber.html")
+
+
 if __name__=="__main__":
     app.run(host='127.0.0.1', debug=True, port=int(os.environ.get('PORT', 8081)))
