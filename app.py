@@ -5,31 +5,9 @@ import os
 app = Flask(__name__, static_folder="static")
 
 @app.route("/")
+@app.route("/index.html")
 def index():
-    with open("static/yaml/resume.yaml") as f:
-        resume = yaml.load(f, Loader=yaml.FullLoader)
-
-    me_imgs = os.scandir("static/assets/img/me")
-
-    with open("static/yaml/projects.yaml") as f:
-        projects = yaml.load(f, Loader=yaml.FullLoader)
-
-    featured_project = None
-    for p in projects:
-        if p["featured"] == True:
-            featured_project = p
-            projects.remove(p)
-            featured_img = featured_project["img"]
-
-    for p in range(len(projects)):
-        if p % 2 == 0:
-            projects[p]["classes"] = "project-text w-100 my-auto text-center text-lg-right"
-            projects[p]["col_classes"] = "col-lg-6 order-lg-first"
-        else:
-            projects[p]["classes"] = "project-text w-100 my-auto text-center text-lg-left"
-            projects[p]["col_classes"] = "col-lg-6"
-
-    return render_template("index.html", **locals())
+    return render_template("index.html")
 
 
 @app.route("/cyber.html")
@@ -38,5 +16,6 @@ def cyber():
 
 
 if __name__=="__main__":
-    # test
-    app.run(host='0.0.0.0', debug=False, port=int(os.environ.get('PORT', 8080)))
+    app.secret_key = '841da66s9xdaq3'
+    app.config['SESSION_TYPE'] = 'filesystem'
+    app.run(host='0.0.0.0', debug=True, port=8080)
