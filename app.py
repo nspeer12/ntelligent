@@ -39,4 +39,4 @@ def cyber():
 
 if __name__=="__main__":
     # test
-    app.run(host='127.0.0.1', debug=False, port=int(os.environ.get('PORT', 8080)))
+    app.run(host='0.0.0.0', debug=False, port=int(os.environ.get('PORT', 8080)))
